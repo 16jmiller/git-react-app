@@ -36,7 +36,10 @@ class Commit extends Component {
             for (index = 0; index < data.files.length; ++index) {
                 this.addFile(data.files[index]);
             }
-        });
+        })
+        .catch(error => {
+            console.log(error.response)
+          });
     }
 
   addFile = (file) => {

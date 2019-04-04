@@ -19,6 +19,9 @@ class GitForm extends Component {
     axios.get(`https://api.github.com/repos/${this.state.username}/${this.state.reponame}/commits`).then(resp => {
       const data = resp.data;
       this.props.addCommits(data)
+    })
+    .catch(error => {
+      console.log(error.response)
     });
   }
 
