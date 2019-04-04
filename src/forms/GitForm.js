@@ -18,10 +18,7 @@ class GitForm extends Component {
     event.preventDefault();
     axios.get(`https://api.github.com/repos/${this.state.username}/${this.state.reponame}/commits`).then(resp => {
       const data = resp.data;
-      var index;
-      for (index = 0; index < data.length; ++index) {
-        this.props.addCommit(data[index]);
-      }
+      this.props.addCommits(data)
     });
   }
 

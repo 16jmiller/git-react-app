@@ -1,0 +1,19 @@
+  .file-sections {
+    height:150px;
+    width:1000px;
+    background-color: #528080;
+    position: relative;
+    border-bottom: 1px solid #353535;
+  }
+  
+  .file-info {
+    font-size: .5em;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .file-sectioninfo {
+    padding:40px 40px;
+  }

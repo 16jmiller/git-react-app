@@ -1,0 +1,49 @@
+.pic {
+    float: left;
+    padding:40px 40px;
+  }
+  
+  .sections:not(:last-child) {
+    border-bottom: 1px solid #353535
+  }
+  
+  .sections {
+    height:150px;
+    width:1000px;
+    background-color: #494949;
+    position: relative
+  }
+  
+  .info {
+    font-size: .5em;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .sectioninfo {
+    padding:40px 40px;
+  }
+  
+  #chevron-arrow-down {
+    display: inline-block;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    width: 10px; height: 10px;
+    transform: rotate(45deg);
+    position: absolute; 
+    right: 20px;
+    bottom: 20px;
+  }
+
+  #chevron-arrow-up {
+    display: inline-block;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    width: 10px; height: 10px;
+    transform: rotate(-135deg);
+    position: absolute; 
+    right: 20px;
+    bottom: 20px;
+  }
